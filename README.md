@@ -1,0 +1,3 @@
+# Bot Status Bot
+
+## WARNING: WORK IN PROGRESS
