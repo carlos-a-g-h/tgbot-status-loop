@@ -1,9 +1,0 @@
-FROM python:3.9.8-slim-bullseye
-
-WORKDIR /mybot
-
-COPY . .
-
-RUN pip install req.txt
-
-CMD ["python3","main.py"]
