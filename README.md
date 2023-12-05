@@ -4,7 +4,7 @@
 
 - Python ( 3.9.8 was used )
 
-- Telethon ( Tested in versions 1.25.0, 1.27.0 and 1.32.0 )
+- Telethon ( 1.25.0 or above are OK to use, tested in 1.32.0 )
 
 ## Environment variables
 
