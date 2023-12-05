@@ -14,12 +14,12 @@
 
 - SESSION ( Telethon string session, use any script you want )
 
-- CHAT_ID ( Chat were the initial message will be sent )
+- CHAT_ID ( Optional. Chat were the initial message will be sent, i f not specified, the message will be sent to your saved messages )
 
 - TARGETS ( Space separated list of bot usernames )
 
 - FREQMIN ( Frequency in minutes )
 
-- PORT ( Optional, Used for setting up as web service instead of worker )
+- PORT ( Optional. Used for setting up as web service instead of worker )
 
 NOTE: Environment variables can also be provided through a 'bot.env' file
