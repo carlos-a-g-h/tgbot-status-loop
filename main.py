@@ -81,9 +81,15 @@ async def check_status_spec(uname):
 			)
 		)
 
+		uid_sent=sent_msg.from_id.user_id
+		uid_recieved=-1
+		if history.messages[0].from_id is not None:
+			uid_recieved=history.messages[0].from_id.user_id
+
 		result=0
-		if not sent_msg.id==history.messages[0].id:
-			retult=result+1
+		print(uname,uid_sent,uid_recieved)
+		if not uid_sent==uid_recieved:
+			result=result+1
 
 		await _state["client"].send_read_acknowledge(uname)
 
@@ -113,7 +119,7 @@ async def check_status():
 	_state["total"]=total
 
 	msg_block=_state["msg_block"]
-	msg=f"{msg_block}\n{msg_new}\n\nLast checked: {datetime.now().utcnow()} (UTC 0)\nTotal checks: {total}"
+	msg=f"{msg_block}\n{msg_new}\n\nLast checked: {datetime.now().utcnow()} (UTC +0)\nTotal checks: {total}"
 
 	try:
 		await _state["ogmev"].edit(msg.strip())
