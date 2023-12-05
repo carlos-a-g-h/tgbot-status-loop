@@ -6,4 +6,4 @@ COPY . .
 
 RUN apt update;apt install -yy apache2;pip install req.txt
 
-CMD ["python3","main.py"]
+CMD ["bash","run.sh"]
