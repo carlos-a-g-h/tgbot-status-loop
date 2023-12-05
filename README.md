@@ -14,7 +14,7 @@
 
 - SESSION ( Telethon string session, use any script you want )
 
-- CHAT_ID ( Optional. Chat were the initial message will be sent, i f not specified, the message will be sent to your saved messages )
+- CHAT_ID ( Optional. Chat were the initial message will be sent, if it's not specified, the message will be sent to your saved messages )
 
 - TARGETS ( Space separated list of bot usernames )
 
