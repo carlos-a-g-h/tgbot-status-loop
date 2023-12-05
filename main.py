@@ -128,7 +128,7 @@ async def check_status():
 
 async def mainloop_init():
 
-	msg_block=f"**Monitoring bots**\n\nStarted: {str(datetime.now().utcnow())} (UTC +0)"
+	msg_block=f"**Monitoring bots**\n\nStarted: {str(datetime.now().utcnow())} (UTC +0)\nInterval: "+str(_env["freqmin"])+" minute(s)"
 
 	ogmev=await _state["client"].send_message(
 		_env["chat_id"],
